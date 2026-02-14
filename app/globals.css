@@ -41,6 +41,42 @@ body {
   background-attachment: fixed;
 }
 
+/* Mobile browsers (notably iOS Safari/Chrome) can crash/reload when combining
+   large fixed backgrounds + heavy filters/blend/masks. Use safer fallbacks. */
+@media (max-width: 768px) {
+  html,
+  body,
+  .sb-body {
+    background-attachment: scroll;
+  }
+
+  .sb-body::before {
+    animation: none;
+    opacity: 0.22;
+  }
+
+  .sb-dashboardBg {
+    mix-blend-mode: normal;
+    mask-image: none;
+    opacity: 0.55;
+  }
+
+  .sb-dashboardSvg {
+    width: 100vw;
+    height: 100vh;
+    filter: none;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  html,
+  body,
+  .sb-body {
+    background-attachment: scroll;
+  }
+}
+
 /* No-scroll landing shell */
 .sb-pageFixed {
   min-height: 100vh;
