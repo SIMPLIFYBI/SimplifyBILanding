@@ -19,32 +19,13 @@ export function Landing() {
             />
           </a>
 
-          <div className="hidden items-center gap-2 sm:flex" aria-label="Primary navigation">
-            <a
-              href="https://consulting.simplifybi.com"
-              target="_blank"
-              rel="noreferrer"
-              className="sb-navPill"
-            >
-              Consulting
-            </a>
-            <a
-              href="https://core-farm.vercel.app/user"
-              target="_blank"
-              rel="noreferrer"
-              className="sb-navPill"
-            >
-              CoreFarm
-            </a>
-          </div>
-
           <a
             href="https://www.simplifybi.com/contact-3"
             target="_blank"
             rel="noreferrer"
             className="sb-btn sb-btnSmall sb-btnPrimary"
           >
-            Book a call
+            Book a Discovery Call
           </a>
         </div>
       </header>

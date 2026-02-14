@@ -486,6 +486,362 @@ body {
     radial-gradient(circle at 70% 75%, rgba(139, 92, 246, 0.75), transparent 62%);
 }
 
+/* Full dashboard background (behind hero text) */
+.sb-heroSection {
+  isolation: isolate;
+}
+
+.sb-noise,
+.sb-grid,
+.sb-blob {
+  z-index: 0;
+}
+
+.sb-heroContent {
+  position: relative;
+  z-index: 2;
+}
+
+.sb-dashboardBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Start the dashboard below the hero copy (no background behind the headline/lead). */
+  top: clamp(220px, 34vh, 440px);
+  pointer-events: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.80;
+  mix-blend-mode: screen;
+  /* Fade in from the top edge of the dashboard region. */
+  mask-image: linear-gradient(to bottom, transparent 0%, black 18%, black 100%);
+}
+
+.sb-dashboardSvg {
+  width: 120vw;
+  height: 120vh;
+  max-width: none;
+  filter:
+    saturate(1.25)
+    contrast(1.15)
+    drop-shadow(0 0 30px rgba(139, 92, 246, 0.22))
+    drop-shadow(0 0 46px rgba(46, 168, 255, 0.18))
+    drop-shadow(0 0 56px rgba(24, 209, 143, 0.14));
+  transform: translate3d(0, 0, 0) scale(1.04);
+  opacity: 1;
+}
+
+.sb-dashFrame {
+  fill: rgba(139, 92, 246, 0.06);
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 1.2;
+}
+
+.sb-dashTop {
+  fill: rgba(139, 92, 246, 0.05);
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1.2;
+}
+
+.sb-dashSide {
+  fill: rgba(255, 255, 255, 0.015);
+}
+
+.sb-dashTopSearch {
+  fill: rgba(255, 255, 255, 0.020);
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1.2;
+}
+
+.sb-dashKpi {
+  fill: rgba(255, 255, 255, 0.020);
+  stroke: rgba(255, 255, 255, 0.18);
+  stroke-width: 1.2;
+}
+
+.sb-dashCard {
+  fill: rgba(139, 92, 246, 0.07);
+  stroke: rgba(0, 0, 0, 0);
+  stroke-width: 0;
+}
+
+.sb-dashGrid {
+  stroke: rgba(0, 0, 0, 0);
+  stroke-width: 0;
+  opacity: 0;
+}
+
+.sb-dashCol {
+  fill: rgba(255, 255, 255, 0.035);
+  stroke: rgba(0, 0, 0, 0);
+  stroke-width: 0;
+}
+
+.sb-dashPill {
+  fill: rgba(255, 255, 255, 0.09);
+}
+
+.sb-dashPillSoft {
+  fill: rgba(255, 255, 255, 0.06);
+}
+
+.sb-dashPillSofter {
+  fill: rgba(255, 255, 255, 0.045);
+}
+
+.sb-dashLine {
+  stroke: url(#sbDashNeon);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.sb-dashLineSoft {
+  stroke: url(#sbDashNeonAlt);
+  stroke-width: 2.0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.65;
+}
+
+.sb-dashSpark {
+  stroke: url(#sbDashNeon);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.85;
+}
+
+.sb-dashArea {
+  stroke: url(#sbDashNeonAlt);
+  stroke-width: 2.0;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.75;
+}
+
+.sb-dashMini {
+  stroke: rgba(46, 168, 255, 0.65);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.sb-dashMiniAlt {
+  stroke: rgba(139, 92, 246, 0.60);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  opacity: 0.9;
+}
+
+.sb-dashAxis {
+  stroke: rgba(0, 0, 0, 0);
+  stroke-width: 0;
+  opacity: 0;
+}
+
+.sb-dashDot {
+  fill: rgba(46, 168, 255, 0.38);
+}
+
+.sb-dashBar {
+  fill: rgba(46, 168, 255, 0.42);
+}
+
+.sb-dashBarNeg {
+  fill: rgba(255, 255, 255, 0.16);
+}
+
+.sb-dashDonutTrack {
+  stroke: rgba(255, 255, 255, 0.12);
+  stroke-width: 14;
+}
+
+.sb-dashDonutArc {
+  stroke: rgba(46, 168, 255, 0.40);
+  stroke-width: 14;
+  stroke-linecap: round;
+}
+
+.sb-dashKnob {
+  fill: rgba(139, 92, 246, 0.55);
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 2;
+}
+
+.sb-dashKnobAlt {
+  fill: rgba(46, 168, 255, 0.55);
+  stroke: rgba(255, 255, 255, 0.22);
+  stroke-width: 2;
+}
+
+.sb-dashPulse {
+  fill: rgba(255, 255, 255, 0.20);
+  stroke: rgba(139, 92, 246, 0.55);
+  stroke-width: 3;
+}
+
+.sb-dashPulseRing {
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgba(139, 92, 246, 0.26);
+  stroke-width: 6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sb-dashboardSvg {
+    opacity: 0.62;
+    animation: sbDashboardIn 4s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+  }
+
+  @keyframes sbDashboardIn {
+    0% {
+      opacity: 0.62;
+      transform: translate3d(0, 10px, 0) scale(1.06);
+    }
+    18% {
+      opacity: 0.92;
+    }
+    100% {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1.04);
+    }
+  }
+
+  .sb-dashAnimLine {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 900;
+    animation: sbDashLineDraw 4s ease-out both;
+  }
+
+  @keyframes sbDashLineDraw {
+    0% {
+      stroke-dashoffset: 900;
+      opacity: 0;
+    }
+    22% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  .sb-dashBar {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    transform: scaleY(0);
+    animation: sbDashBars 4s cubic-bezier(0.2, 0.7, 0.1, 1) both;
+  }
+
+  .sb-dashBar1 { animation-delay: 220ms; }
+  .sb-dashBar2 { animation-delay: 320ms; }
+  .sb-dashBar3 { animation-delay: 420ms; }
+  .sb-dashBar4 { animation-delay: 520ms; }
+  .sb-dashBar5 { animation-delay: 620ms; }
+  .sb-dashBar6 { animation-delay: 720ms; }
+  .sb-dashBar7 { animation-delay: 820ms; }
+  .sb-dashBar8 { animation-delay: 920ms; }
+
+  @keyframes sbDashBars {
+    0% {
+      transform: scaleY(0);
+      opacity: 0;
+    }
+    24% {
+      opacity: 1;
+    }
+    60% {
+      transform: scaleY(1);
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  .sb-dashAnimDonut {
+    stroke-dasharray: 390;
+    stroke-dashoffset: 390;
+    animation: sbDashDonut 4s ease-out both;
+  }
+
+  @keyframes sbDashDonut {
+    0% {
+      stroke-dashoffset: 390;
+      opacity: 0;
+    }
+    26% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 120;
+      opacity: 1;
+    }
+  }
+
+  .sb-dashAnimSpark {
+    stroke-dasharray: 240;
+    stroke-dashoffset: 240;
+    animation: sbDashSpark 4s ease-out both;
+  }
+
+  @keyframes sbDashSpark {
+    0% {
+      stroke-dashoffset: 240;
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  .sb-dashAnimArea {
+    stroke-dasharray: 320;
+    stroke-dashoffset: 320;
+    animation: sbDashArea 4s ease-out both;
+  }
+
+  @keyframes sbDashArea {
+    0% {
+      stroke-dashoffset: 320;
+      opacity: 0;
+    }
+    24% {
+      opacity: 1;
+    }
+    100% {
+      stroke-dashoffset: 0;
+      opacity: 1;
+    }
+  }
+
+  .sb-dashAnimDot {
+    animation: sbDashDot 4s ease-out both;
+  }
+
+  @keyframes sbDashDot {
+    0% {
+      transform: translateY(4px);
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
 .sb-dash {
   animation: sbDash 2.6s linear infinite;
 }

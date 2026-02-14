@@ -46,14 +46,7 @@ function RotatingWords(props: { words: string[]; intervalMs?: number }) {
 
 export function ConnectedHero() {
   const words = useMemo(
-    () => [
-      "sites",
-      "maintenance",
-      "production",
-      "safety",
-      "finance",
-      "people",
-    ],
+    () => ["maintenance", "production", "safety", "finance", "people"],
     [],
   );
 
@@ -63,8 +56,37 @@ export function ConnectedHero() {
       <div className="sb-grid" aria-hidden />
       <div className="sb-blob sb-blob-a" aria-hidden />
       <div className="sb-blob sb-blob-b" aria-hidden />
+      <div className="sb-dashboardBg" aria-hidden>
+        <svg
+          className="sb-dashboardSvg"
+          viewBox="0 0 1200 700"
+          preserveAspectRatio="xMidYMid slice"
+          fill="none"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <defs>
+            <linearGradient id="sbDashNeon" x1="160" y1="120" x2="1040" y2="620" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="rgba(46, 168, 255, 0.86)" />
+              <stop offset="0.55" stopColor="rgba(139, 92, 246, 0.84)" />
+              <stop offset="1" stopColor="rgba(24, 209, 143, 0.82)" />
+            </linearGradient>
+            <linearGradient id="sbDashNeonAlt" x1="240" y1="260" x2="980" y2="560" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stopColor="rgba(139, 92, 246, 0.72)" />
+              <stop offset="1" stopColor="rgba(46, 168, 255, 0.64)" />
+            </linearGradient>
+          </defs>
 
-      <div className="relative mx-auto flex max-w-6xl flex-1 flex-col justify-center px-6 pb-10 pt-10 sm:pb-14 sm:pt-14 lg:pt-10">
+          <path
+            d="M170 372 C230 352 250 334 312 330 S410 360 454 346 S520 300 580 312 S674 414 736 416 S860 338 920 342 S1010 330 1062 300"
+            className="sb-dashLine sb-dashAnimLine"
+          />
+          <circle cx="860" cy="338" r="7" className="sb-dashPulse" />
+          <circle cx="860" cy="338" r="16" className="sb-dashPulseRing" />
+        </svg>
+      </div>
+
+      <div className="sb-heroContent relative mx-auto flex max-w-6xl flex-1 flex-col justify-center px-6 pb-10 pt-10 sm:pb-14 sm:pt-14 lg:pt-10">
         <div className="sb-heroLayout">
           <div className="sb-heroCopy">
             <h1 className="sb-heroH1">
@@ -82,33 +104,6 @@ export function ConnectedHero() {
             <p className="sb-heroLead">
               SimplifyBI is the navigation hub for modern mining operations: consulting today, CoreFarm now, and more apps soon.
             </p>
-
-            <div className="sb-heroCtas">
-              <a
-                href="https://consulting.simplifybi.com"
-                target="_blank"
-                rel="noreferrer"
-                className="sb-btn sb-btnPrimary"
-              >
-                Explore Consulting
-              </a>
-              <a
-                href="https://core-farm.vercel.app/user"
-                target="_blank"
-                rel="noreferrer"
-                className="sb-btn sb-btnGhost"
-              >
-                Open CoreFarm
-              </a>
-              <a
-                href="https://www.simplifybi.com/contact-3"
-                target="_blank"
-                rel="noreferrer"
-                className="sb-btn sb-btnGhost"
-              >
-                Book a discovery call
-              </a>
-            </div>
 
             <div className="sb-routeGrid" aria-label="Choose where to go">
               <a
@@ -157,3 +152,5 @@ export function ConnectedHero() {
     </section>
   );
 }
+
+export default ConnectedHero;
