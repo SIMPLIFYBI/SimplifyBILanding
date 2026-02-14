@@ -21,7 +21,7 @@ export function Landing() {
 
           <div className="hidden items-center gap-2 sm:flex" aria-label="Primary navigation">
             <a
-              href="https://simplifybi.com"
+              href="https://consulting.simplifybi.com"
               target="_blank"
               rel="noreferrer"
               className="sb-navPill"

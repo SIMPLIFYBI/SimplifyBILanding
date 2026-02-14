@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 
 function usePrefersReducedMotion() {
@@ -66,12 +65,6 @@ export function ConnectedHero() {
       <div className="sb-blob sb-blob-b" aria-hidden />
 
       <div className="relative mx-auto flex max-w-6xl flex-1 flex-col justify-center px-6 pb-10 pt-10 sm:pb-14 sm:pt-14 lg:pt-10">
-        <div className="sb-heroTop">
-          <div className="sb-heroPill" aria-hidden>
-            SimplifyBI • Coreyard Platform
-          </div>
-        </div>
-
         <div className="sb-heroLayout">
           <div className="sb-heroCopy">
             <h1 className="sb-heroH1">
@@ -92,7 +85,7 @@ export function ConnectedHero() {
 
             <div className="sb-heroCtas">
               <a
-                href="https://simplifybi.com"
+                href="https://consulting.simplifybi.com"
                 target="_blank"
                 rel="noreferrer"
                 className="sb-btn sb-btnPrimary"
@@ -119,7 +112,7 @@ export function ConnectedHero() {
 
             <div className="sb-routeGrid" aria-label="Choose where to go">
               <a
-                href="https://simplifybi.com"
+                href="https://consulting.simplifybi.com"
                 target="_blank"
                 rel="noreferrer"
                 className="sb-routeCard"
@@ -131,7 +124,7 @@ export function ConnectedHero() {
                   </span>
                 </div>
                 <div className="sb-routeTitle">Operational analytics, delivered fast</div>
-                <div className="sb-routeBody">Dashboards, KPI design, and automation built for mining reality.</div>
+                <div className="sb-routeBody">Power BI & Power Platform - Solutions for smarted Business </div>
               </a>
 
               <a
