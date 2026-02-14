@@ -119,7 +119,7 @@ export function ConnectedHero() {
                   </span>
                 </div>
                 <div className="sb-routeTitle">Operational analytics, delivered fast</div>
-                <div className="sb-routeBody">Power BI & Power Platform - Solutions for smarted Business </div>
+                <div className="sb-routeBody">Power BI & Power Platform - Solutions for smarter Business </div>
               </a>
 
               <a
@@ -129,7 +129,10 @@ export function ConnectedHero() {
                 className="sb-routeCard sb-routeCardAlt"
               >
                 <div className="sb-routeHead">
-                  <span className="sb-pill sb-pillAlt">CoreFarm</span>
+                  <span className="sb-routeHeadLeft">
+                    <span className="sb-pill sb-pillAlt">CoreFarm</span>
+                    <span className="sb-routeTag">Web app</span>
+                  </span>
                   <span className="sb-routeArrow" aria-hidden>
                     →
                   </span>

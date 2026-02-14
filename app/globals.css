@@ -1349,7 +1349,16 @@ body {
 }
 
 .sb-routeCardAlt {
-  background: radial-gradient(circle at 20% 10%, rgba(46, 168, 255, 0.12), rgba(255, 255, 255, 0.03) 55%);
+  border-color: rgba(46, 168, 255, 0.22);
+  background:
+    radial-gradient(circle at 18% 18%, rgba(46, 168, 255, 0.18), transparent 56%),
+    radial-gradient(circle at 82% 22%, rgba(24, 209, 143, 0.12), transparent 58%),
+    rgba(255, 255, 255, 0.03);
+  box-shadow:
+    0 22px 74px rgba(0, 0, 0, 0.46),
+    0 0 0 1px rgba(46, 168, 255, 0.10),
+    0 0 34px rgba(46, 168, 255, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .sb-routeCardMuted {
@@ -1361,6 +1370,27 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+
+.sb-routeHeadLeft {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.sb-routeTag {
+  display: inline-flex;
+  align-items: center;
+  height: 22px;
+  padding: 0 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: -0.2px;
+  color: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(46, 168, 255, 0.22);
+  background: rgba(46, 168, 255, 0.08);
 }
 
 .sb-routeArrow {
