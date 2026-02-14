@@ -51,8 +51,17 @@ body {
   }
 
   .sb-body::before {
-    animation: none;
-    opacity: 0.22;
+    content: none;
+  }
+
+  .sb-header {
+    backdrop-filter: none;
+  }
+
+  .sb-noise,
+  .sb-grid,
+  .sb-blob {
+    display: none;
   }
 
   .sb-dashboardBg {
@@ -74,6 +83,14 @@ body {
   body,
   .sb-body {
     background-attachment: scroll;
+  }
+
+  .sb-body::before {
+    content: none;
+  }
+
+  .sb-header {
+    backdrop-filter: none;
   }
 }
 
