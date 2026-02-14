@@ -65,9 +65,7 @@ body {
   }
 
   .sb-dashboardBg {
-    mix-blend-mode: normal;
-    mask-image: none;
-    opacity: 0.55;
+    display: none;
   }
 
   .sb-dashboardSvg {
@@ -91,6 +89,9 @@ body {
 
   .sb-header {
     backdrop-filter: none;
+  }
+  .sb-dashboardBg {
+    display: none;
   }
 }
 
