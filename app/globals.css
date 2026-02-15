@@ -1390,6 +1390,20 @@ body {
   color: rgba(255, 255, 255, 0.68);
 }
 
+/* Mobile/iOS: keep the decorative dashboard fully disabled.
+   This must live late in the file so it wins over the base `.sb-dashboardBg { display: flex; }`. */
+@media (max-width: 768px) {
+  .sb-dashboardBg {
+    display: none !important;
+  }
+}
+
+@supports (-webkit-touch-callout: none) {
+  .sb-dashboardBg {
+    display: none !important;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .sb-rotatorWordAnim {
     animation: none;
