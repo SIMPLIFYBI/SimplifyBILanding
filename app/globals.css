@@ -1349,7 +1349,14 @@ body {
 }
 
 .sb-routeCardAlt {
-  background: radial-gradient(circle at 20% 10%, rgba(46, 168, 255, 0.12), rgba(255, 255, 255, 0.03) 55%);
+  border-color: rgba(46, 168, 255, 0.20);
+  background:
+    radial-gradient(circle at 16% 14%, rgba(46, 168, 255, 0.18), transparent 58%),
+    radial-gradient(circle at 84% 20%, rgba(24, 209, 143, 0.10), transparent 60%),
+    rgba(255, 255, 255, 0.03);
+  box-shadow:
+    0 20px 66px rgba(0, 0, 0, 0.44),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .sb-routeCardMuted {
@@ -1361,6 +1368,12 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+}
+
+/* Defensive: older deployments briefly rendered a "Web app" tag via `.sb-routeTag`.
+   We no longer use it, but hiding ensures it never appears if stale markup is served. */
+.sb-routeTag {
+  display: none !important;
 }
 
 .sb-routeArrow {
