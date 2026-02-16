@@ -123,22 +123,19 @@ export function ConnectedHero() {
               </a>
 
               <a
-                href="https://core-farm.vercel.app/user"
+                href="https://corefarm.simplifybi.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="sb-routeCard sb-routeCardAlt"
               >
                 <div className="sb-routeHead">
-                  <span className="sb-routeHeadLeft">
-                    <span className="sb-pill sb-pillAlt">CoreFarm</span>
-                    <span className="sb-routeTag">Web app</span>
-                  </span>
+                  <span className="sb-pill sb-pillAlt">CoreFarm</span>
                   <span className="sb-routeArrow" aria-hidden>
                     →
                   </span>
                 </div>
                 <div className="sb-routeTitle">Productized workflows for clarity</div>
-                <div className="sb-routeBody">Turn scattered inputs into dependable action.</div>
+                <div className="sb-routeBody">Turn field activity into clear, consistent progress data for mining project planning and reporting.</div>
               </a>
 
               <div className="sb-routeCard sb-routeCardMuted" aria-label="More apps coming soon">
