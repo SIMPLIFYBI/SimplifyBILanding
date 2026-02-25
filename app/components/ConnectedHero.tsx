@@ -102,7 +102,7 @@ export function ConnectedHero() {
               </span>
             </h1>
             <p className="sb-heroLead">
-              SimplifyBI is the navigation hub for modern mining operations: consulting today, CoreFarm now, and more apps soon.
+              SimplifyBI is the navigation hub for modern mining operations: consulting today, WorkMine now, and more apps soon.
             </p>
 
             <div className="sb-routeGrid" aria-label="Choose where to go">
@@ -129,7 +129,7 @@ export function ConnectedHero() {
                 className="sb-routeCard sb-routeCardAlt"
               >
                 <div className="sb-routeHead">
-                  <span className="sb-pill sb-pillAlt">CoreFarm</span>
+                  <span className="sb-pill sb-pillAlt">WorkMine</span>
                   <span className="sb-routeArrow" aria-hidden>
                     →
                   </span>
