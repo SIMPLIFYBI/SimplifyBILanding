@@ -123,7 +123,7 @@ export function ConnectedHero() {
               </a>
 
               <a
-                href="https://corefarm.simplifybi.com/"
+                href="https://workmine.simplifybi.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="sb-routeCard sb-routeCardAlt"
