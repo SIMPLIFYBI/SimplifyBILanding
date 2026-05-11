@@ -1,0 +1,18 @@
+# Query: https://core-farm.vercel.app/user
+# ContextLines: 1
+
+3 results - 2 files
+
+app/components/ConnectedHero.tsx:
+  102                <a
+  103:                 href="https://workmine.simplifybi.com"
+  104                  target="_blank"
+
+  137                <a
+  138:                 href="https://workmine.simplifybi.com"
+  139                  target="_blank"
+
+app/components/Landing.tsx:
+  31              <a
+  32:               href="https://workmine.simplifybi.com"
+  33                target="_blank"
