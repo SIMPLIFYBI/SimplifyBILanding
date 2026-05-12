@@ -123,7 +123,7 @@ export function ConnectedHero() {
               </a>
 
               <a
-                href="https://workmine.simplifybi.com/"
+                href="https://workmine.io/"
                 target="_blank"
                 rel="noreferrer"
                 className="sb-routeCard sb-routeCardAlt"

@@ -1,0 +1,9 @@
+# Query: https://corefarm.simplifybi.com/
+# ContextLines: 1
+
+1 result - 1 file
+
+app/components/ConnectedHero.tsx:
+  125                <a
+  126:                 href="https://workmine.simplifybi.com/"
+  127                  target="_blank"
